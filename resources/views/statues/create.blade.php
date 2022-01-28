@@ -22,7 +22,7 @@
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div>
             Person:<br>
-            <input type="text" name="person" value="{{ old('person') }}">
+            <input type="text" name="person" value="{{ old('person') }}" class="form-control">
             @error('person')
                 <p>{{ $message }}</p>
             @enderror
